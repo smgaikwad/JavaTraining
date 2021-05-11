@@ -47,15 +47,14 @@ class MergeSort
         }
     }
 
-    // Main function that sorts arr[l..r] using
-    // merge()
+    
     void sort(int arr[], int l, int r)
     {
         if (l < r) {
             // Find the middle point
             int m =l+ (r-l)/2;
 
-            // Sort first and second halves
+           
             sort(arr, l, m);
             sort(arr, m + 1, r);
 
@@ -64,7 +63,7 @@ class MergeSort
         }
     }
 
-    /* A utility function to print array of size n */
+   
     static void printArray(int arr[])
     {
         int n = arr.length;
@@ -88,4 +87,3 @@ class MergeSort
         printArray(arr);
     }
 }
-/* This code is contributed by Rajat Mishra */
